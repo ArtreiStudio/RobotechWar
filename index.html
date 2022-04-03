@@ -56,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Web Gl.loader.js";
+      var loaderUrl = buildUrl + "/Web Build.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Web Gl.data.unityweb",
-        frameworkUrl: buildUrl + "/Web Gl.framework.js.unityweb",
-        codeUrl: buildUrl + "/Web Gl.wasm.unityweb",
+        dataUrl: buildUrl + "/Web Build.data.unityweb",
+        frameworkUrl: buildUrl + "/Web Build.framework.js.unityweb",
+        codeUrl: buildUrl + "/Web Build.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Robo Tech",
@@ -85,6 +85,7 @@
         canvas.style.width = "512px";
         canvas.style.height = "600px";
       }
+      canvas.style.background = "url('" + buildUrl + "/Web Build.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
